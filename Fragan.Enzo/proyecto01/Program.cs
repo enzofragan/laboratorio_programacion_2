@@ -10,8 +10,15 @@ namespace proyecto01
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("hola mundo!!!!!!");
+            string nombre;
 
+            System.Console.WriteLine("hola mundo!!!!!!");
+            System.Console.ReadKey();
+
+            System.Console.WriteLine("ingrese su nombre: ");
+            nombre=System.Console.ReadLine();
+
+            System.Console.WriteLine("su nombre es: {0}", nombre);
             System.Console.ReadKey();
         }
     }
