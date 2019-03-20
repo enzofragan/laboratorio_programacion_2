@@ -1,0 +1,7 @@
+D:\VisualStudio\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.exe.config
+D:\VisualStudio\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.exe
+D:\VisualStudio\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.pdb
+D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csprojAssemblyReference.cache
+D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csproj.CoreCompileInputs.cache
+D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.exe
+D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.pdb
