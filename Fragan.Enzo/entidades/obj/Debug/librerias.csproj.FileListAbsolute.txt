@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\obj\Debug\librerias.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\obj\Debug\librerias.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\bin\Debug\entidades.dll
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\bin\Debug\entidades.pdb
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\obj\Debug\entidades.dll
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\entidades\obj\Debug\entidades.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C06C718D-49C4-431D-A2C8-3BDE523BC442}</ProjectGuid>
+    <ProjectGuid>{4B2FD6CA-6C40-495E-A185-A236570BE7CA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>proyecto_02</RootNamespace>
-    <AssemblyName>proyecto_02</AssemblyName>
+    <RootNamespace>ejercicio_17</RootNamespace>
+    <AssemblyName>ejercicio_17</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,18 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="boligrafo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sello.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\entidades\librerias.csproj">
-      <Project>{cecf8ae3-4a2a-4def-bf84-fc3b80a1082c}</Project>
-      <Name>librerias</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

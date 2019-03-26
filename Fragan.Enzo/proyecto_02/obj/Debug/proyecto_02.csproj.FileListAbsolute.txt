@@ -5,3 +5,13 @@ D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csprojAssemblyRefe
 D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csproj.CoreCompileInputs.cache
 D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.exe
 D:\VisualStudio\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.pdb
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.exe.config
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.exe
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\bin\Debug\proyecto_02.pdb
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\bin\Debug\entidades.dll
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\bin\Debug\entidades.pdb
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.csproj.CopyComplete
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.exe
+C:\Users\alumno\Desktop\laboratorio_programacion_2\Fragan.Enzo\proyecto_02\obj\Debug\proyecto_02.pdb

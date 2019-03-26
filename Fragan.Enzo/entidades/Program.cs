@@ -19,7 +19,6 @@ namespace proyecto_02
       //System.Console.WriteLine(Sello.Imprimir());
       //System.Console.ReadKey();
       System.Console.WriteLine(librerias.test.saludar());
-            System.Console.ReadKey();
-    }
+        }
     }
 }
