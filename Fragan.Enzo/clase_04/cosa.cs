@@ -19,25 +19,19 @@ namespace clase_04
       this.fecha = DateTime.Now;
     }
 
-    public cosa(int entero)
+    public cosa(int entero) : this()
     {
       this.establecerValorI(entero);
-      this.cadena = "sin valor";
-      this.fecha = DateTime.Now;
     }
 
-    public cosa(int entero, DateTime fecha)
+    public cosa(int entero, DateTime fecha) : this(entero)
     {
-      this.establecerValorI(entero);
-      this.cadena = "sin valor";
       this.establecerValorD(fecha);
     }
 
-    public cosa(int entero, DateTime fecha,string cadena)
+    public cosa(int entero, DateTime fecha,string cadena) : this(entero,fecha)
     {
-      this.establecerValorI(entero);
       this.establecerValorS(cadena);
-      this.establecerValorD(fecha);
     }
 
     public void establecerValorI(int entero)
@@ -57,7 +51,7 @@ namespace clase_04
 
     public string mostrar()
     {
-      return this.entero.ToString()+"-"+cadena+"-"+this.fecha.ToShortDateString();
+      return this.entero.ToString()+"-"+cadena+"-"+this.fecha.ToString();
     }
 
     public static string mostrar(cosa cosas)
