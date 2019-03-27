@@ -26,6 +26,7 @@ namespace clase04.windowsform
       
       MessageBox.Show(obj.mostrar());
       this.button1.Text = "crear una cosa bonita";
+      this.BackColor = Color.DarkRed;
     }
   }
 }
