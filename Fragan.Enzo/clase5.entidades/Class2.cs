@@ -53,5 +53,23 @@ namespace clase5.entidades
     {
       return !(t1._tinta == t2);
     }
+
+    public static implicit operator string(Pluma p1)
+    {
+      return p1.mostrar();
+    }
+
+    public static Pluma operator +(Pluma t1, Tinta t2)
+    {
+      if(t1._tinta==t2)
+      {
+        if(t1._cantidad<100)
+        {
+          t1._cantidad = t1._cantidad + 10;
+        }
+      }
+
+      return t1;
+    }
   }
 }
