@@ -1,6 +1,6 @@
 public enum ETipoTinta
 {
-    comun;
-    conBrillo = 33;
-    china;
+    comun,
+    conBrillo = 33,
+    china
 }

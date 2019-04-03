@@ -11,10 +11,9 @@ namespace clase5.entidades
     private ConsoleColor color;
     private ETipoTinta tipoTinta;
 
-    public tinta()
+    public tinta() : this(ConsoleColor.Black, ETipoTinta.comun)
     {
-      this.color = ConsoleColor.Black;
-      this.tipoTinta = ETipoTinta.comun;
+      
     }
 
     public tinta(ConsoleColor color) : this()
@@ -22,7 +21,7 @@ namespace clase5.entidades
       this.color = color;
     }
 
-    public tinta(ConsoleColor color, ETipoTinta eTipo) : this(color)
+    public tinta(ConsoleColor color, ETipoTinta eTipo)
     {
       this.tipoTinta = eTipo;
     }
@@ -34,7 +33,7 @@ namespace clase5.entidades
 
     public static string mostrar(tinta tinta)
     {
-      return "color:" + tinta.color.ToString() + "\ntipotinta" + tinta.tipoTinta.ToString();
+      return tinta.mostrar();
     }
   }
 }
