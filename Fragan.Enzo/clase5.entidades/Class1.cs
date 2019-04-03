@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace clase5.entidades
 {
-    public class tinta
+    public class Tinta
     {
     private ConsoleColor color;
     private ETipoTinta tipoTinta;
 
-    public tinta() : this(ConsoleColor.Black, ETipoTinta.comun)
+    public Tinta() : this(ConsoleColor.Black, ETipoTinta.comun)
     {
       
     }
 
-    public tinta(ConsoleColor color) : this(color,ETipoTinta.comun)
+    public Tinta(ConsoleColor color) : this(color,ETipoTinta.comun)
     {
       this.color = color;
     }
 
-    public tinta(ConsoleColor color, ETipoTinta eTipo)
+    public Tinta(ConsoleColor color, ETipoTinta eTipo)
     {
       this.color = color;
       this.tipoTinta = eTipo;
@@ -32,12 +32,12 @@ namespace clase5.entidades
       return "color: " + this.color.ToString() + "\ntipotinta " + this.tipoTinta.ToString();
     }
 
-    public static string mostrar(tinta tinta)
+    public static string mostrar(Tinta tinta)
     {
       return tinta.mostrar();
     }
 
-    public static bool operator ==(tinta t1,tinta t2)
+    public static bool operator ==(Tinta t1,Tinta t2)
     {
       bool respuesta = false;
 
@@ -46,7 +46,7 @@ namespace clase5.entidades
       return respuesta;
     }
 
-    public static bool operator !=(tinta t1,tinta t2)
+    public static bool operator !=(Tinta t1,Tinta t2)
     {
       return !(t1 == t2);
     }

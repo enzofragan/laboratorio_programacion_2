@@ -11,13 +11,15 @@ namespace clase5.test
   {
     static void Main(string[] args)
     {
-      tinta tinta1 = new tinta();
-      tinta tinta2 = new tinta(ConsoleColor.Blue);
-      tinta tinta3 = new tinta(ConsoleColor.DarkGreen,ETipoTinta.conBrillo);
-      tinta tinta4 = new tinta();
-      tinta tinta5 = tinta1;
+      Tinta tinta1 = new Tinta();
+      Tinta tinta2 = new Tinta(ConsoleColor.Blue);
+      Tinta tinta3 = new Tinta(ConsoleColor.DarkGreen,ETipoTinta.conBrillo);
+      Tinta tinta4 = new Tinta();
+      Tinta tinta5 = tinta1;
+      Pluma pluma1 = new Pluma("mapel",tinta3,50);
+      
 
-      if(tinta1!=tinta4)//tinta1.Equals(tinta4)
+      /*if(tinta1!=tinta4)//tinta1.Equals(tinta4)
       {
         Console.WriteLine("son iguales");
       }
@@ -26,9 +28,10 @@ namespace clase5.test
         Console.WriteLine("no son iguales");
       }
 
-      Console.WriteLine(tinta.mostrar(tinta1));
-      Console.WriteLine(tinta.mostrar(tinta2));
-      Console.WriteLine(tinta.mostrar(tinta3));
+      Console.WriteLine(Tinta.mostrar(tinta1));
+      Console.WriteLine(Tinta.mostrar(tinta2));
+      Console.WriteLine(Tinta.mostrar(tinta3));*/
+
 
       Console.ReadKey();
     }
