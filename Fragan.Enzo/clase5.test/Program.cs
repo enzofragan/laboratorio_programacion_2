@@ -14,6 +14,17 @@ namespace clase5.test
       tinta tinta1 = new tinta();
       tinta tinta2 = new tinta(ConsoleColor.Blue);
       tinta tinta3 = new tinta(ConsoleColor.DarkGreen,ETipoTinta.conBrillo);
+      tinta tinta4 = new tinta();
+      tinta tinta5 = tinta1;
+
+      if(tinta1!=tinta4)//tinta1.Equals(tinta4)
+      {
+        Console.WriteLine("son iguales");
+      }
+      else
+      {
+        Console.WriteLine("no son iguales");
+      }
 
       Console.WriteLine(tinta.mostrar(tinta1));
       Console.WriteLine(tinta.mostrar(tinta2));
