@@ -32,5 +32,10 @@ namespace paletaform
       frm.Show();
       this._mypaleta += frm.mytempera;
     }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
   }
 }

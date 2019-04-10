@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,9 +55,21 @@ namespace clase6
             return respuesta;
         }
 
+        public static bool operator !=(Paleta paletas,Tempera temperas)
+        {
+      return !(paletas == temperas);
+        }
+
         public static Paleta operator +(Paleta paletas,Tempera temperas)
         {
+          int index = paletas.obtenerIndice();
 
+          if(paletas != temperas)
+          {
+        paletas._temperas[index] = temperas;
+          }
+
+      return paletas;
         }
 
         private int obtenerIndice()
