@@ -13,15 +13,24 @@ namespace paletaform
 {
   public partial class Form1 : Form
   {
+
+    private Paleta _mypaleta;
+
+    public Paleta mypaleta
+    {
+      get { return _mypaleta; }
+      set { _mypaleta = value; }
+    }
     public Form1()
     {
       InitializeComponent();
     }
 
-    private void Form1_Load(object sender, EventArgs e)
+    private void btnMas_Click(object sender, EventArgs e)
     {
-
+      FtrTempera frm = new FtrTempera();
+      frm.Show();
+      this._mypaleta += frm.mytempera;
     }
-
   }
 }

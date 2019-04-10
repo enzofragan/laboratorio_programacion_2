@@ -49,6 +49,7 @@ namespace paletaform
             this.btnMas.TabIndex = 1;
             this.btnMas.Text = "+";
             this.btnMas.UseVisualStyleBackColor = true;
+            this.btnMas.Click += new System.EventHandler(this.btnMas_Click);
             // 
             // Form1
             // 
@@ -59,7 +60,6 @@ namespace paletaform
             this.Controls.Add(this.lstLista);
             this.Name = "Form1";
             this.Text = "FtmPaleta";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
     }
