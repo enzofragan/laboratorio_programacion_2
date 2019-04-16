@@ -23,17 +23,28 @@ namespace paletaform
     }
     public Form1()
     {
+      _mypaleta = 5;
       InitializeComponent();
+      this.btnMas.Text = "+";
+      this.btnCancelar.Text = "-";
     }
 
     private void btnMas_Click(object sender, EventArgs e)
     {
       FtrTempera frm = new FtrTempera();
-      frm.Show();
-      this._mypaleta += frm.mytempera;
+      frm.ShowDialog();
+      if(frm.DialogResult == DialogResult.OK)
+      {
+        this._mypaleta += frm.mytempera;
+      }
     }
 
     private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void button1_Click(object sender, EventArgs e)
     {
 
     }

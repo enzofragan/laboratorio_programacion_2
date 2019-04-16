@@ -24,15 +24,18 @@ namespace paletaform
     {
       InitializeComponent();
 
-      //Enum.GetValues(typeof(ConsoleColor));
-
-      foreach (ConsoleColor item in Enum.GetValues(typeof(ConsoleColor)))
+      this.label1.Text = "marca: ";
+      this.label2.Text = "color: ";
+      this.label3.Text = "cantidad: ";
+      this.btnAceptar.Text = "Aceptar";
+      this.btnCancelar.Text = "Cancelar";
+      this.cmbColor.DropDownStyle = ComboBoxStyle.DropDownList;
+      foreach(ConsoleColor colores in Enum.GetValues(typeof(ConsoleColor)))
       {
-        cmbColor.Items.Add(item);
+        this.cmbColor.Items.Add(colores);
       }
-
-
-
+      this.cmbColor.Items.Add("seleccionar uno");
+      this.cmbColor.SelectedItem = "seleccionar uno";
     }
 
     private void FtrTempera_Load(object sender, EventArgs e)
@@ -42,25 +45,18 @@ namespace paletaform
 
     private void cmbColor_SelectedIndexChanged(object sender, EventArgs e)
     {
-
+      
     }
 
     private void btnAceptar_Click(object sender, EventArgs e)
     {
-      Tempera nuevo = new Tempera(txtMarca.Text, (ConsoleColor)this.cmbColor.SelectedItem, Convert.ToSByte(txtCantidad));
-      // MessageBox.Show(Tempera.mostrar(nuevo));
-
-      this._mytempera = nuevo;
+      this._mytempera = new Tempera(this.txtMarca.Text, (ConsoleColor)this.cmbColor.SelectedItem, sbyte.Parse(this.txtCantidad.Text));
+      this.DialogResult = DialogResult.OK;
     }
 
-    private void txtMarca_TextChanged(object sender, EventArgs e)
+    private void btnCancelar_Click(object sender, EventArgs e)
     {
-
-    }
-
-    private void txtCantidad_TextChanged(object sender, EventArgs e)
-    {
-
+      this.DialogResult = DialogResult.Cancel;
     }
   }
 }

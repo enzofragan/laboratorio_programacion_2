@@ -20,7 +20,7 @@ namespace clase6
         public static string mostrar(Tempera Tempera1)
         {
             string ret = "";
-            if(Tempera1 !=null)
+            if(Tempera1 != null)
             {
                 ret = Tempera1.mostrar();
             }
@@ -52,17 +52,23 @@ namespace clase6
 
         public static Tempera operator +(Tempera Tempera1,Tempera Tempera2)
         {
+            Tempera Tempera3 = new Tempera(Tempera1._marca, Tempera1._color, Tempera1._cantidad);
             if (Tempera1==Tempera2)
             {
-                Tempera1._cantidad = Tempera1 + Tempera2._cantidad;
+              Tempera3 += Tempera2._cantidad;
             }
 
-            return Tempera1;
+            return Tempera3;
         }
 
-        public static implicit operator sbyte(Tempera Tempera1)
+        public static explicit operator sbyte(Tempera Tempera1)
         {
             return Tempera1._cantidad;
+        }
+
+        public static implicit operator string(Tempera Tempera1)
+        {
+          return Tempera1.mostrar();
         }
 
         public Tempera() : this("sin marca",ConsoleColor.Black,10)

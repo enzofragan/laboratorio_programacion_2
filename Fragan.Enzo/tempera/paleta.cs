@@ -18,7 +18,7 @@ namespace clase6
 
         private Paleta(int cantidad)
         {
-            this._temperas = new Tempera[cantidad];
+            this._temperas = new Tempera[this._cantidadMaxima];
             this._cantidadMaxima = cantidad;
         }
 
@@ -49,7 +49,10 @@ namespace clase6
 
             foreach (Tempera t in paletas._temperas)
             {
-                respuesta = !(Object.Equals(t,null) && temperas==t);
+              if (!(object.Equals(t, null)) && temperas == t)
+              {
+                respuesta = true;
+              }
             }
 
             return respuesta;
@@ -57,24 +60,78 @@ namespace clase6
 
         public static bool operator !=(Paleta paletas,Tempera temperas)
         {
-      return !(paletas == temperas);
+          return !(paletas == temperas);
         }
 
         public static Paleta operator +(Paleta paletas,Tempera temperas)
         {
-          int index = paletas.obtenerIndice();
+          int index = paletas.ObtenerIndice(temperas);
 
-          if(paletas != temperas)
+          if(index != -1)
           {
-        paletas._temperas[index] = temperas;
+            paletas._temperas[index] += temperas;
+          }
+          else
+          {
+            index = paletas.obtenerIndice();
+            if(index!=-1)
+            {
+              paletas._temperas[index] = temperas;
+            }
           }
 
-      return paletas;
+          return paletas;
         }
 
         private int obtenerIndice()
         {
+          int i;
+          int indice = -1;
+          for (i = 0; i < this._cantidadMaxima; i++)
+          {
+            if (!Object.Equals(this._temperas[i],null))
+            {
+              indice = i;
+              break;
+            }
+          }
+          return indice;
+        }
 
+        private int ObtenerIndice(Tempera t)
+        {
+          int indice = 0;
+          int i;
+          for (i = 0; i < this._cantidadMaxima; i++)
+          {
+            if (!(Object.Equals(this._temperas[indice], null)) && this._temperas[i] == t)
+            {
+              indice = i;
+            }
+          }
+          return indice;
+        }
+
+        public static Paleta operator -(Paleta paletas, Tempera temperas)
+        {
+          int indice;
+          sbyte aux1;
+          sbyte aux2;
+
+          indice = paletas.ObtenerIndice(temperas);
+
+          if(indice != -1)
+          {
+            aux1 = (sbyte)temperas;
+            paletas._temperas[indice] += (sbyte)(aux1 * (-1));
+            aux2 = (sbyte)paletas._temperas[indice];
+            if(aux2<=0)
+            {
+              paletas._temperas[indice] = null;
+            }
+          }
+
+          return paletas;
         }
     }
 }

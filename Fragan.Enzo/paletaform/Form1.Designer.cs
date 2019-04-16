@@ -28,22 +28,15 @@ namespace paletaform
     /// </summary>
     private void InitializeComponent()
     {
-            this.lstLista = new System.Windows.Forms.ListBox();
             this.btnMas = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.LstLista = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // lstLista
-            // 
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.Location = new System.Drawing.Point(12, 15);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(387, 173);
-            this.lstLista.TabIndex = 0;
             // 
             // btnMas
             // 
             this.btnMas.AllowDrop = true;
-            this.btnMas.Location = new System.Drawing.Point(134, 225);
+            this.btnMas.Location = new System.Drawing.Point(26, 240);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(135, 23);
             this.btnMas.TabIndex = 1;
@@ -51,13 +44,33 @@ namespace paletaform
             this.btnMas.UseVisualStyleBackColor = true;
             this.btnMas.Click += new System.EventHandler(this.btnMas_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.AllowDrop = true;
+            this.btnCancelar.Location = new System.Drawing.Point(241, 240);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(135, 23);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "-";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // LstLista
+            // 
+            this.LstLista.FormattingEnabled = true;
+            this.LstLista.Location = new System.Drawing.Point(12, 15);
+            this.LstLista.Name = "LstLista";
+            this.LstLista.Size = new System.Drawing.Size(387, 212);
+            this.LstLista.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 275);
+            this.Controls.Add(this.LstLista);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnMas);
-            this.Controls.Add(this.lstLista);
             this.Name = "Form1";
             this.Text = "FtmPaleta";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -66,9 +79,9 @@ namespace paletaform
     }
 
     #endregion
-
-    private System.Windows.Forms.ListBox lstLista;
     private System.Windows.Forms.Button btnMas;
+    private System.Windows.Forms.Button btnCancelar;
+    private System.Windows.Forms.ListBox LstLista;
   }
 }
 
