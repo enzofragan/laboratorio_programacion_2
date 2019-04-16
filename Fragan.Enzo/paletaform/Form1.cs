@@ -14,13 +14,8 @@ namespace paletaform
   public partial class Form1 : Form
   {
 
-    private Paleta _mypaleta;
+    Paleta _mypaleta;
 
-    public Paleta mypaleta
-    {
-      get { return _mypaleta; }
-      set { _mypaleta = value; }
-    }
     public Form1()
     {
       _mypaleta = 5;

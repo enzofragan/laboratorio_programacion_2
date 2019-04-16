@@ -133,5 +133,27 @@ namespace clase6
 
           return paletas;
         }
+
+        public Tempera this[int indice]
+        {
+          get
+          {
+            if(indice >= 0 && !(object.Equals(this._temperas[indice],null))&& indice<this._cantidadMaxima)
+            {
+              return this._temperas[indice];
+            }
+            else
+            {
+              return null;
+            }
+          }
+          set
+          {
+            if(indice>=0 && indice <this._cantidadMaxima)
+            {
+              this._temperas[indice] = value;
+            }
+          }
+        }
     }
 }

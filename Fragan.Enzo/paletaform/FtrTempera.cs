@@ -17,7 +17,7 @@ namespace paletaform
 
     public Tempera mytempera
     {
-      get { return _mytempera; }
+      get { return this._mytempera; }
     }
 
     public FtrTempera()
@@ -36,6 +36,11 @@ namespace paletaform
       }
       this.cmbColor.Items.Add("seleccionar uno");
       this.cmbColor.SelectedItem = "seleccionar uno";
+    }
+
+    public FtrTempera(Tempera t) : this()
+    {
+      this._mytempera = t;
     }
 
     private void FtrTempera_Load(object sender, EventArgs e)
