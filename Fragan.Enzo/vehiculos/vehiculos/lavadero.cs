@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace vehiculos
 {
-  class lavadero
+  public class lavadero
   {
     private List<vehiculo> _vehiculos;
     private float _precioAuto;
@@ -22,7 +22,10 @@ namespace vehiculos
 
         foreach (vehiculo v in this._vehiculos)
         {
-          //Lavadero += 
+          if(v is Auto)
+          {
+            Lavadero += ((Auto)v).mostrarAuto();
+          }
         }
 
         return Lavadero;
