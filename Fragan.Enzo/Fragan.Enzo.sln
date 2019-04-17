@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tempera", "tempera\tempera.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paletaform", "paletaform\paletaform.csproj", "{30843549-49B4-47B2-929F-EB7D3A35C1B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vehiculos", "vehiculos\vehiculos\vehiculos.csproj", "{8AD43D39-902F-4E48-BD99-286FBF68E881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clase_09", "clase_09\clase_09.csproj", "{C30DA984-D6ED-4AF2-A4C8-D9FDBB6F4C51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{30843549-49B4-47B2-929F-EB7D3A35C1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30843549-49B4-47B2-929F-EB7D3A35C1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30843549-49B4-47B2-929F-EB7D3A35C1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AD43D39-902F-4E48-BD99-286FBF68E881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AD43D39-902F-4E48-BD99-286FBF68E881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AD43D39-902F-4E48-BD99-286FBF68E881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AD43D39-902F-4E48-BD99-286FBF68E881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30DA984-D6ED-4AF2-A4C8-D9FDBB6F4C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30DA984-D6ED-4AF2-A4C8-D9FDBB6F4C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30DA984-D6ED-4AF2-A4C8-D9FDBB6F4C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30DA984-D6ED-4AF2-A4C8-D9FDBB6F4C51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
