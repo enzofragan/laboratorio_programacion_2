@@ -21,7 +21,7 @@ namespace vehiculos
     //}
     public override string ToString()
     {
-      return base.Mostrar() + " " + this._cilindrada;
+      return base.ToString() + " " + this._cilindrada;
     }
   }
 }

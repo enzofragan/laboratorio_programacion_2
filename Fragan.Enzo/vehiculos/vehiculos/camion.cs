@@ -22,7 +22,7 @@ namespace vehiculos
 
     public override string ToString()
     {
-      return base.Mostrar()+" "+this._tara;
+      return base.ToString()+" "+this._tara;
     }
   }
 }

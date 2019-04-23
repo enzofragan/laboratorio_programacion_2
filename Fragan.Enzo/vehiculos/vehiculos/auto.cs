@@ -22,7 +22,7 @@ namespace vehiculos
 
     public override string ToString()
     {
-      return base.Mostrar() + " " + this._cantidadAsientos;
+      return base.ToString() + " " + this._cantidadAsientos;
     }
   }
 }

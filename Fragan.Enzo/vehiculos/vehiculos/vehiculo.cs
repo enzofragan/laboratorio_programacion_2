@@ -41,6 +41,11 @@ namespace vehiculos
         return "patente: " + this.patente + "\nmarca: " + this.marca + "\ncantidad de ruedas: " + this._cantidadRuedas;
       }
 
+    public override string ToString()
+    {
+      return this.Mostrar();
+    }
+
     public static bool operator ==(vehiculo VehiculoUno,vehiculo VehiculoDos)
     {
       bool respuesta = false;

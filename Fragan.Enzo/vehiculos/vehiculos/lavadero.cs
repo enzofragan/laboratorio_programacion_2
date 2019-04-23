@@ -9,9 +9,9 @@ namespace vehiculos
   public class lavadero
   {
     private List<vehiculo> _vehiculos;
-    private float _precioAuto;
-    private float _precioMoto;
-    private float _precioCamion;
+    private Double _precioAuto;
+    private Double _precioMoto;
+    private Double _precioCamion;
 
     //private string Lavadero;
 
@@ -35,7 +35,7 @@ namespace vehiculos
       this._vehiculos = new List<vehiculo>();
     }
 
-    public lavadero(float auto,float moto,float camion) : this()
+    public lavadero(Double auto, Double moto, Double camion) : this()
     {
       this._precioAuto = auto;
       this._precioMoto = moto;
