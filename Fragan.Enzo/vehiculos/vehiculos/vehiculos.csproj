@@ -43,6 +43,7 @@
     <Compile Include="camion.cs" />
     <Compile Include="auto.cs" />
     <Compile Include="EMarca.cs" />
+    <Compile Include="EVehiculo.cs" />
     <Compile Include="lavadero.cs" />
     <Compile Include="moto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

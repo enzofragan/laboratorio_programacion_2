@@ -22,10 +22,7 @@ namespace vehiculos
 
         foreach (vehiculo v in this._vehiculos)
         {
-          if(v is Auto)
-          {
-            Lavadero += ((Auto)v).mostrarAuto();
-          }
+          Lavadero = v.ToString();
         }
 
         return Lavadero;
@@ -43,6 +40,63 @@ namespace vehiculos
       this._precioAuto = auto;
       this._precioMoto = moto;
       this._precioCamion = camion;
+    }
+
+    public static bool operator ==(lavadero lavadero, vehiculo vehiculo)
+    {
+      bool retorno = false;
+      foreach (vehiculo vehiculos in lavadero._vehiculos)
+      {
+        if (vehiculo == vehiculos)
+        {
+          retorno = true;
+          break;
+        }
+      }
+      return retorno;
+    }
+
+    public static bool operator !=(lavadero lavadero, vehiculo vehiculo)
+    {
+      return !(lavadero == vehiculo);
+    }
+
+    public static lavadero operator +(lavadero lavadero, vehiculo vehiculo)
+    {
+      if (lavadero != vehiculo)
+      {
+        lavadero._vehiculos.Add(vehiculo);
+      }
+      return lavadero;
+    }
+
+    public static lavadero operator -(lavadero lavadero, vehiculo vehiculo)
+    {
+      int indice = (vehiculo == lavadero);
+      if (indice != -1)
+      {
+        lavadero._vehiculos.RemoveAt(indice);
+      }
+      return lavadero;
+    }
+
+    public static int operator ==(vehiculo vehiculo, lavadero lavadero)
+    {
+      int retorno = -1;
+      int i;
+      for (i = 0; i < lavadero._vehiculos.Count; i++)
+      {
+        if (vehiculo == lavadero._vehiculos[i])
+        {
+          retorno = i;
+        }
+      }
+      return retorno;
+    }
+
+    public static int operator !=(vehiculo vehiculo, lavadero lavadero)
+    {
+      return vehiculo == lavadero;
     }
   }
 }

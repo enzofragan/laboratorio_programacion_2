@@ -15,9 +15,13 @@ namespace vehiculos
       this._cilindrada = cilindrada;
     }
 
-    public string mostrarMoto()
+    //public string mostrarMoto()
+    //{
+    //  return mostrarVehiculo() + "\ncilindrada: " + this._cilindrada;
+    //}
+    public override string ToString()
     {
-      return mostrarVehiculo() + "\ncilindrada: " + this._cilindrada;
+      return base.Mostrar() + " " + this._cilindrada;
     }
   }
 }

@@ -15,9 +15,14 @@ namespace vehiculos
       this._cantidadAsientos = asientos;
     }
 
-    public string mostrarAuto()
+    // public string mostrarAuto()
+    // {
+    //   return mostrarVehiculo() + "cantidad de asientos: " + this._cantidadAsientos;
+    // }
+
+    public override string ToString()
     {
-      return mostrarVehiculo() + "cantidad de asientos: " + this._cantidadAsientos;
+      return base.Mostrar() + " " + this._cantidadAsientos;
     }
   }
 }

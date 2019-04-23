@@ -15,9 +15,14 @@ namespace vehiculos
       this._tara = tara;
     }
 
-    public string mostrarCamion()
+    //public string mostrarCamion()
+    //{
+    //  return mostrarVehiculo() + "tara: " + this._tara;
+    //}
+
+    public override string ToString()
     {
-      return mostrarVehiculo() + "tara: " + this._tara;
+      return base.Mostrar()+" "+this._tara;
     }
   }
 }

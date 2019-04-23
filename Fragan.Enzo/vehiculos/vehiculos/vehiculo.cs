@@ -31,10 +31,15 @@ namespace vehiculos
       this._patente = patente;
     }
 
-    protected string mostrarVehiculo()
-    {
-      return "patente: " + this.patente + "\nmarca: " + this.marca + "\ncantidad de ruedas: "+ this._cantidadRuedas;
-    }
+    //protected string mostrarVehiculo()
+    //{
+    //  return "patente: " + this.patente + "\nmarca: " + this.marca + "\ncantidad de ruedas: "+ this._cantidadRuedas;
+    //}
+
+      protected virtual string Mostrar()
+      {
+        return "patente: " + this.patente + "\nmarca: " + this.marca + "\ncantidad de ruedas: " + this._cantidadRuedas;
+      }
 
     public static bool operator ==(vehiculo VehiculoUno,vehiculo VehiculoDos)
     {
