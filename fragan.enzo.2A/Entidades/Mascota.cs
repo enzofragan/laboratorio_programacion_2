@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Mascota
+    public abstract class Mascota
     {
         private string _nombre;
         private string _raza;
@@ -21,19 +21,17 @@ namespace Entidades
             get { return Raza; }
         }
 
-        protected string DatosCompletos()
+        protected virtual string DatosCompletos()
         {
-
+            return "Nombre: " + this._nombre + "\nRaza: " + this._raza;
         }
 
-        protected string Ficha()
-        {
-
-        }
+        protected abstract string Ficha();
 
         public Mascota(string Nombre, string Raza)
         {
-
+            this._nombre = Nombre;
+            this._raza = Raza;
         }
     }
 }

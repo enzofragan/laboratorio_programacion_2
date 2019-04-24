@@ -29,12 +29,12 @@ namespace Entidades
 
         public Grupo(string Nombre) : this()
         {
-
+            this._nombre = Nombre;
         }
 
-        public Grupo(string Nombre, ETipoManada Tipo) : this(Nombre)
+        public Grupo(string Nombre, ETipoManada Tipos) : this(Nombre)
         {
-
+            this.Tipo = Tipos;
         }
 
         public static implicit operator string(Grupo Grupo1)
@@ -44,7 +44,17 @@ namespace Entidades
 
         public static bool operator ==(Grupo Grupo1, Mascota Mascota1)
         {
+            bool respuesta = false;
+            foreach(Mascota G in Grupo1._manada)
+            {
+                if(Mascota1.Nombre==G.Nombre && Mascota1.Raza==G.Raza)
+                {
+                    respuesta = true;
+                    break;
+                }
+            }
 
+            return respuesta;
         }
 
         public static bool operator !=(Grupo Grupo1, Mascota Mascota1)
@@ -54,7 +64,12 @@ namespace Entidades
 
         public static Grupo operator +(Grupo Grupo1, Mascota Mascota1)
         {
+            if(Grupo1!=Mascota1)
+            {
+                Grupo1._manada.Add(Mascota1);
+            }
 
+            return Grupo1;
         }
 
         public static Grupo operator -(Grupo Grupo1, Mascota Mascota1)
