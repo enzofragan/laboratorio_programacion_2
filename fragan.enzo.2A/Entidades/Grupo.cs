@@ -61,6 +61,7 @@ namespace Entidades
                 if(Mascota1.Nombre==G.Nombre && Mascota1.Raza==G.Raza)
                 {
                     respuesta = true;
+                    Console.Write("la mascota " + Mascota1.Nombre + " ya se encuentra en la lista\n");
                     break;
                 }
             }
@@ -91,7 +92,7 @@ namespace Entidades
             }
             else
             {
-                Console.Write("la mascota no se encuentra en la lista\n");
+                Console.Write("la mascota "+Mascota1.Nombre+" no se encuentra en la lista\n");
             }
 
             return Grupo1;
