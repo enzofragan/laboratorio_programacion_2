@@ -14,7 +14,7 @@ namespace Entidades
 
         public ETipoManada Tipo
         {
-            set { Tipo = value; }
+            set { _tipo = value; }
         }
 
         static Grupo()
@@ -39,7 +39,18 @@ namespace Entidades
 
         public static implicit operator string(Grupo Grupo1)
         {
+            string info = "grupo: " + Grupo1._nombre + " tipo: " +Grupo._tipo+ "\n integrantes <"+Grupo1._manada.Count.ToString()+">";
 
+            string ret = "\n ";
+            foreach(Mascota G in Grupo1._manada)
+            {
+                ret += G.ToString();
+                ret += "\n";
+            }
+
+            info += ret;
+
+            return info;
         }
 
         public static bool operator ==(Grupo Grupo1, Mascota Mascota1)
@@ -74,7 +85,16 @@ namespace Entidades
 
         public static Grupo operator -(Grupo Grupo1, Mascota Mascota1)
         {
+            if(Grupo1==Mascota1)
+            {
+                Grupo1._manada.Remove(Mascota1);
+            }
+            else
+            {
+                Console.Write("la mascota no se encuentra en la lista\n");
+            }
 
+            return Grupo1;
         }
     }
 }

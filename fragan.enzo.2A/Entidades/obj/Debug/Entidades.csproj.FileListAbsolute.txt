@@ -1,0 +1,5 @@
+D:\VisualStudio\fragan.enzo.2A\Entidades\bin\Debug\Entidades.dll
+D:\VisualStudio\fragan.enzo.2A\Entidades\bin\Debug\Entidades.pdb
+D:\VisualStudio\fragan.enzo.2A\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\VisualStudio\fragan.enzo.2A\Entidades\obj\Debug\Entidades.dll
+D:\VisualStudio\fragan.enzo.2A\Entidades\obj\Debug\Entidades.pdb

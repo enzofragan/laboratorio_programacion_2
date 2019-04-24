@@ -1,0 +1,10 @@
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\bin\Debug\fragan.enzo.2A.exe.config
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\bin\Debug\fragan.enzo.2A.exe
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\bin\Debug\fragan.enzo.2A.pdb
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\bin\Debug\Entidades.dll
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\bin\Debug\Entidades.pdb
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\obj\Debug\fragan.enzo.2A.csprojAssemblyReference.cache
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\obj\Debug\fragan.enzo.2A.csproj.CoreCompileInputs.cache
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\obj\Debug\fragan.enzo.2A.csproj.CopyComplete
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\obj\Debug\fragan.enzo.2A.exe
+D:\VisualStudio\fragan.enzo.2A\fragan.enzo.2A\obj\Debug\fragan.enzo.2A.pdb

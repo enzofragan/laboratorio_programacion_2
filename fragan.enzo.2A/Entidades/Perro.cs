@@ -40,7 +40,7 @@ namespace Entidades
                 Informacion = "alfa de la manada";
             }
 
-            return this.Nombre+" "+this.Raza+","+Informacion+" edad "+this.edad;
+            return base.DatosCompletos() +","+Informacion+" edad "+this.edad;
         }
 
         public static bool operator ==(Perro Perro1, Perro Perro2)
@@ -78,7 +78,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            return base.DatosCompletos()+"\nedad: "+this.edad+"\n¿es alfa?: "+this.esAlfa;
+            return this.Ficha();
         }
     }
 }

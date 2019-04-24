@@ -13,17 +13,17 @@ namespace Entidades
 
         public string Nombre
         {
-            get { return Nombre; }
+            get { return _nombre; }
         }
 
         public string Raza
         {
-            get { return Raza; }
+            get { return _raza; }
         }
 
         protected virtual string DatosCompletos()
         {
-            return "Nombre: " + this._nombre + "\nRaza: " + this._raza;
+            return this.Nombre + " " + this.Raza;
         }
 
         protected abstract string Ficha();
