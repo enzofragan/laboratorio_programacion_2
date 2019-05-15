@@ -18,7 +18,7 @@ namespace vehiculos
     public string MiLavadero
     {
       get {
-        string Lavadero;
+        string Lavadero = "";
 
         foreach (vehiculo v in this._vehiculos)
         {

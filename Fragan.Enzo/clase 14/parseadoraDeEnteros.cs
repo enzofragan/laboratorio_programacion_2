@@ -18,11 +18,11 @@ namespace clase_14
       }
       catch (FormatException e)
       {
-        throw new Exception ("El string no podrá ser convertido por error de formato",e);
+        throw new ErrorParserException(e.Message + "por error de formato");
       }
       catch (OverflowException f)
-      {  
-        throw new Exception ("El string no podrá ser convertido por tamaño del dato",f);
+      {
+        throw new ErrorParserException(f.Message + "por tamaño del dato");
       }
 
       return numero;
@@ -32,9 +32,17 @@ namespace clase_14
     {
       bool respuesta = false;
       entero = 0;
-      if(Parse(cadena) != 0)
+      try
       {
-        respuesta = true;
+        entero = Parse(cadena);
+        if(entero!=0)
+        {
+          respuesta = true;
+        }
+      }
+      catch (Exception)
+      {
+        respuesta = false;
       }
 
       return respuesta;
