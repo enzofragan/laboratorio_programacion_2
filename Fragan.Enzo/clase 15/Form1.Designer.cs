@@ -32,6 +32,8 @@
             this.BtnTraer = new System.Windows.Forms.Button();
             this.LstVisor = new System.Windows.Forms.ListBox();
             this.TxtValor = new System.Windows.Forms.TextBox();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // BtnEnter
@@ -46,7 +48,7 @@
             // 
             // BtnTraer
             // 
-            this.BtnTraer.Location = new System.Drawing.Point(12, 165);
+            this.BtnTraer.Location = new System.Drawing.Point(12, 200);
             this.BtnTraer.Name = "BtnTraer";
             this.BtnTraer.Size = new System.Drawing.Size(128, 23);
             this.BtnTraer.TabIndex = 1;
@@ -57,7 +59,7 @@
             // LstVisor
             // 
             this.LstVisor.FormattingEnabled = true;
-            this.LstVisor.Location = new System.Drawing.Point(12, 38);
+            this.LstVisor.Location = new System.Drawing.Point(12, 73);
             this.LstVisor.Name = "LstVisor";
             this.LstVisor.Size = new System.Drawing.Size(297, 121);
             this.LstVisor.TabIndex = 2;
@@ -69,11 +71,26 @@
             this.TxtValor.Size = new System.Drawing.Size(180, 20);
             this.TxtValor.TabIndex = 3;
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Location = new System.Drawing.Point(198, 41);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(111, 26);
+            this.BtnBuscar.TabIndex = 4;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 199);
+            this.ClientSize = new System.Drawing.Size(333, 230);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.TxtValor);
             this.Controls.Add(this.LstVisor);
             this.Controls.Add(this.BtnTraer);
@@ -92,6 +109,8 @@
     private System.Windows.Forms.Button BtnTraer;
     private System.Windows.Forms.ListBox LstVisor;
     private System.Windows.Forms.TextBox TxtValor;
+    private System.Windows.Forms.Button BtnBuscar;
+    private System.Windows.Forms.OpenFileDialog openFileDialog1;
   }
 }
 

@@ -59,5 +59,21 @@ namespace clase_15
         MessageBox.Show(f.Message);
       }
     }
+
+    private void BtnBuscar_Click(object sender, EventArgs e)
+    {
+      
+      try
+      {
+        if(this.openFileDialog1.ShowDialog() == DialogResult.OK)
+        {
+          MessageBox.Show(this.openFileDialog1.FileName);
+        }
+      }
+      catch (Exception f)
+      {
+        MessageBox.Show(f.Message);
+      }
+    }
   }
 }
