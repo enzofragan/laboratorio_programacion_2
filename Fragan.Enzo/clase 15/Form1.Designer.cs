@@ -42,6 +42,7 @@
             this.BtnEnter.TabIndex = 0;
             this.BtnEnter.Text = "Enter";
             this.BtnEnter.UseVisualStyleBackColor = true;
+            this.BtnEnter.Click += new System.EventHandler(this.BtnEnter_Click);
             // 
             // BtnTraer
             // 
@@ -66,7 +67,6 @@
             this.TxtValor.Name = "TxtValor";
             this.TxtValor.Size = new System.Drawing.Size(180, 20);
             this.TxtValor.TabIndex = 3;
-            this.TxtValor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FrmPrincipal
             // 
