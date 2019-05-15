@@ -20,7 +20,9 @@ namespace clase_15
 
     private void FrmPrincipal_Load(object sender, EventArgs e)
     {
-
+      this.openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+      this.openFileDialog1.Title = "selecione un archivo";
+      this.openFileDialog1.Multiselect = true;
     }
 
     private void BtnEnter_Click(object sender, EventArgs e)
@@ -47,10 +49,11 @@ namespace clase_15
         StreamReader archivo = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\miArchivo.txt");
         string l;
         //MessageBox.Show(archivo.ReadToEnd());
-        while((l=archivo.ReadLine())!= null)
+        LstVisor.Items.Clear();
+        while ((l=archivo.ReadLine())!= null)
         {
-          //LstVisor.Items.Add(l);
-          MessageBox.Show(l);
+          LstVisor.Items.Add(l);
+          //MessageBox.Show(l);
         }
         archivo.Close();
       }
