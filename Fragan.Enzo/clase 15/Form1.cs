@@ -15,7 +15,9 @@ namespace clase_15
   {
     public FrmPrincipal()
     {
+      string ruta="";
       InitializeComponent();
+
     }
 
     private void FrmPrincipal_Load(object sender, EventArgs e)
@@ -23,6 +25,9 @@ namespace clase_15
       this.openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
       this.openFileDialog1.Title = "selecione un archivo";
       this.openFileDialog1.Multiselect = true;
+      this.openFileDialog1.DefaultExt = ".txt";
+      this.openFileDialog1.AddExtension = true;
+      this.openFileDialog1.Filter = "(*.txt)|*.TXT";
     }
 
     private void BtnEnter_Click(object sender, EventArgs e)
@@ -70,6 +75,7 @@ namespace clase_15
       {
         if(this.openFileDialog1.ShowDialog() == DialogResult.OK)
         {
+          
           MessageBox.Show(this.openFileDialog1.FileName);
         }
       }
