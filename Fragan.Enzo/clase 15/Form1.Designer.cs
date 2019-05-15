@@ -52,6 +52,7 @@
             this.BtnTraer.TabIndex = 1;
             this.BtnTraer.Text = "Traer";
             this.BtnTraer.UseVisualStyleBackColor = true;
+            this.BtnTraer.Click += new System.EventHandler(this.BtnTraer_Click);
             // 
             // LstVisor
             // 
