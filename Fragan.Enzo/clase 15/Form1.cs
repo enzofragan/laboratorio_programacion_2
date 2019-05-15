@@ -27,7 +27,8 @@ namespace clase_15
     {
       try
       {
-        StreamWriter archivo = new StreamWriter("C:\\Users\\alumno\\Desktop\\miArchivo.txt", true);
+        StreamWriter archivo = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+"\\miArchivo.txt", true);
+        //StreamWriter archivo = new StreamWriter("C:\\Users\\alumno\\Desktop\\miArchivo.txt", true);
         //StreamWriter archivo = new StreamWriter("D:\\miArchivo.txt",true);
         archivo.WriteLine(TxtValor.Text);
         TxtValor.Clear();
@@ -43,7 +44,7 @@ namespace clase_15
     {
       try
       {
-        StreamReader archivo = new StreamReader("C:\\Users\\alumno\\Desktop\\miArchivo.txt");
+        StreamReader archivo = new StreamReader(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\miArchivo.txt");
         string l;
         //MessageBox.Show(archivo.ReadToEnd());
         while((l=archivo.ReadLine())!= null)
