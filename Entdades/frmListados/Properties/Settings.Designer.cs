@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entdades.Properties {
+namespace frmListados.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,7 +26,7 @@ namespace Entdades.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAB5PC15\\SQLEXPRESS;Initial Catalog=Padron;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAB5PC15\\SQLEXPRESS;Integrated Security=True")]
         public string coneccion_db {
             get {
                 return ((string)(this["coneccion_db"]));
